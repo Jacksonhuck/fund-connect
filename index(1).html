@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fund Connect — Together, we can make a difference</title>
+<style>
+:root{--green:#168447;--green2:#0f6b38;--pale:#eaf7ef;--ink:#183126;--muted:#61736a;--line:#dce9e0;--white:#fff}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7fbf8;line-height:1.55}
+header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-size:1.35rem;font-weight:800;color:var(--green);text-decoration:none}.brand span{color:var(--ink)}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.btn{display:inline-block;background:var(--green);color:white!important;padding:10px 16px;border-radius:9px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.btn:hover{background:var(--green2)}.btn-outline{background:white;color:var(--green)!important;border:1px solid var(--green)}
+main{max-width:1100px;margin:auto;padding:34px 20px 70px}
+.hero{background:linear-gradient(130deg,#e7f7ed,#fff);border:1px solid var(--line);border-radius:22px;padding:48px 30px;text-align:center}
+.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}
+h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.12;margin:12px 0}
+.hero p{max-width:650px;margin:0 auto 24px;color:var(--muted);font-size:1.1rem}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+section{margin-top:42px}h2{font-size:1.7rem;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:15px;padding:20px}
+.emoji{font-size:2rem}.card h3{margin:8px 0 5px}.card p{color:var(--muted);margin:0}
+.tag{display:inline-block;background:var(--pale);color:var(--green2);font-size:.78rem;font-weight:700;padding:4px 9px;border-radius:20px;margin-top:12px}
+.panel{max-width:480px;margin:20px auto;background:white;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 30px rgba(15,70,38,.06)}
+.panel h2{text-align:center}.panel .sub{text-align:center}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input{width:100%;padding:13px;border:1px solid #cbdacf;border-radius:9px;font:inherit;background:white}
+input:focus{outline:2px solid #a7dfbb;border-color:var(--green)}
+.full{width:100%;margin-top:18px;font-size:1rem}
+.note{font-size:.86rem;color:var(--muted);background:#f2f8f4;padding:12px;border-radius:9px;margin-top:16px}
+.notice{display:none;margin-top:14px;padding:12px;border-radius:9px;background:#fff6df;color:#704e00}
+.switch{text-align:center;color:var(--muted);margin:18px 0 0}.switch a{color:var(--green);font-weight:700}
+footer{background:#103d26;color:#eaf7ef;padding:26px 20px;text-align:center}footer p{margin:4px}
+.hidden{display:none!important}
+.demo-label{font-size:.78rem;font-weight:800;color:#8a5a00;background:#fff4d6;border-radius:6px;padding:4px 8px;display:inline-block}
+@media(max-width:620px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:34px 18px}main{padding:22px 14px 50px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#home">Fund <span>Connect</span></a>
+<nav>
+<a href="#home" onclick="showPage('home')">Home</a>
+<a href="#explore" onclick="showPage('home')">Explore</a>
+<a href="#about" onclick="showPage('home')">About</a>
+<a href="#login" onclick="showPage('login')">Log in</a>
+<a class="btn" href="#signup" onclick="showPage('signup')">Create account</a>
+</nav></div></header>
+
+<main>
+<div id="home">
+<section class="hero">
+<div class="eyebrow">Small acts. Big impact.</div>
+<h1>When we connect, <span style="color:var(--green)">hope grows.</span></h1>
+<p>Fund Connect is a crowdfunding concept designed to help people share genuine causes and invite communities to support them.</p>
+<div class="actions">
+<a class="btn" href="#signup" onclick="showPage('signup')">Create an account</a>
+<a class="btn btn-outline" href="#explore">Explore campaigns</a>
+</div>
+</section>
+<section id="explore">
+<h2>Explore campaigns</h2><p class="sub">Sample campaigns for website demonstration only.</p>
+<div class="cards">
+<article class="card"><div class="emoji">📚</div><span class="demo-label">DEMO CAMPAIGN</span><h3>Learning opportunities</h3><p>A sample campaign showing how an education fundraiser could be presented.</p><span class="tag">Education</span></article>
+<article class="card"><div class="emoji">🏘️</div><span class="demo-label">DEMO CAMPAIGN</span><h3>Community projects</h3><p>A sample campaign for a community improvement idea.</p><span class="tag">Community</span></article>
+<article class="card"><div class="emoji">🌱</div><span class="demo-label">DEMO CAMPAIGN</span><h3>Growing greener spaces</h3><p>A sample campaign about caring for shared green spaces.</p><span class="tag">Environment</span></article>
+</div>
+</section>
+<section id="about">
+<h2>About Fund Connect</h2>
+<p class="sub">Our goal is to make it easier to share meaningful causes, build trust, and bring supporters together. This is an early website prototype, not a live fundraising or payment service.</p>
+</section>
+</div>
+
+<div id="signup" class="hidden">
+<div class="panel">
+<div style="text-align:center"><span class="eyebrow">Join the community</span></div>
+<h2>Create your account</h2><p class="sub">This is a preview of the registration page.</p>
+<form id="signupForm">
+<label for="fullName">Full name</label><input id="fullName" type="text" placeholder="Your name" autocomplete="name" required>
+<label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+<label for="newPassword">Create password</label><input id="newPassword" type="password" placeholder="Preview only — don't use a real password" required>
+<button class="btn full" type="submit">Create account (preview)</button>
+</form>
+<div id="signupNotice" class="notice">Account registration is not connected yet. This demo does not create or save accounts. Please do not enter a real password or sensitive information.</div>
+<p class="switch">Already have an account? <a href="#login" onclick="showPage('login')">Log in</a></p>
+</div>
+</div>
+
+<div id="login" class="hidden">
+<div class="panel">
+<div style="text-align:center"><span class="eyebrow">Welcome back</span></div>
+<h2>Log in to Fund Connect</h2><p class="sub">This is a preview of the login page.</p>
+<form id="loginForm">
+<label for="loginEmail">Email address</label><input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+<label for="loginPassword">Password</label><input id="loginPassword" type="password" placeholder="Preview only — don't use a real password" required>
+<button class="btn full" type="submit">Log in (preview)</button>
+</form>
+<div id="loginNotice" class="notice">Login is not connected yet. This demo does not check or store passwords. Please do not enter a real password or sensitive information.</div>
+<p class="switch">New to Fund Connect? <a href="#signup" onclick="showPage('signup')">Create an account</a></p>
+</div>
+</div>
+</main>
+<footer><p><strong>Fund Connect</strong> — Connecting people with causes.</p><p>Early prototype • Demo campaigns • No real donations or accounts yet</p></footer>
+
+<script>
+function showPage(page){
+  document.getElementById('home').classList.toggle('hidden',page!=='home');
+  document.getElementById('signup').classList.toggle('hidden',page!=='signup');
+  document.getElementById('login').classList.toggle('hidden',page!=='login');
+  window.scrollTo(0,0);
+}
+document.getElementById('signupForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('signupNotice').style.display='block';});
+document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('loginNotice').style.display='block';});
+window.addEventListener('hashchange',function(){let p=location.hash.slice(1);if(p==='signup'||p==='login')showPage(p);else showPage('home');});
+if(location.hash==='#signup'||location.hash==='#login')showPage(location.hash.slice(1));
+</script>
+</body>
+</html>
